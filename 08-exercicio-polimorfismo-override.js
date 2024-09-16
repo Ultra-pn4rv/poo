@@ -31,7 +31,7 @@ class Guts extends Personagem {
     }
 
     mostrarDetalhes() {
-        console.log(`Guts: ${this.nome}, Classe: ${this.classe}, Força: ${this.força}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Arma: ${this.arma}, Marca: ${this.marca}`);
+        console.log(`Guts: ${this.nome}, Classe: ${this.classe}, Força: ${this.forca}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Arma: ${this.arma}, Marca: ${this.marca}`);
     }
 }
 
@@ -48,7 +48,7 @@ class Griffith extends Personagem {
     }
 
     mostrarDetalhes() {
-        console.log(`Griffith: ${this.nome}, Classe: ${this.classe}, Força: ${this.força}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Carisma: ${this.carisma}, Poder de Liderança: ${this.poderDeLideranca}`);
+        console.log(`Griffith: ${this.nome}, Classe: ${this.classe}, Força: ${this.forca}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Carisma: ${this.carisma}, Poder de Liderança: ${this.poderDeLideranca}`);
     }
 }
 

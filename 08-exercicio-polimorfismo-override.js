@@ -1,15 +1,15 @@
 // Classe base Personagem
 class Personagem {
-    constructor(nome, classe, força, agilidade, vida) {
+    constructor(nome, classe, forca, agilidade, vida) {
         this.nome = nome;
         this.classe = classe;
-        this.força = força;
+        this.forca = forca;
         this.agilidade = agilidade;
         this.vida = vida;
     }
 
     atacar(alvo) {
-        console.log(`${this.nome} ataca ${alvo} com força de ${this.força}!`);
+        console.log(`${this.nome} ataca ${alvo} com força de ${this.forca}!`);
     }
 
     receberDano(dano) {
@@ -20,8 +20,8 @@ class Personagem {
 
 // Classe derivada Guts
 class Guts extends Personagem {
-    constructor(nome, classe, força, agilidade, vida, arma, marca) {
-        super(nome, classe, força, agilidade, vida);
+    constructor(nome, classe, forca, agilidade, vida, arma, marca) {
+        super(nome, classe, forca, agilidade, vida);
         this.arma = arma;
         this.marca = marca;
     }
@@ -37,10 +37,10 @@ class Guts extends Personagem {
 
 // Classe derivada Griffith
 class Griffith extends Personagem {
-    constructor(nome, classe, força, agilidade, vida, carisma, poderDeLiderança) {
-        super(nome, classe, força, agilidade, vida);
+    constructor(nome, classe, forca, agilidade, vida, carisma, poderDeLideranca) {
+        super(nome, classe, forca, agilidade, vida);
         this.carisma = carisma;
-        this.poderDeLiderança = poderDeLiderança;
+        this.poderDeLideranca = poderDeLideranca;
     }
 
     inspirar() {
@@ -48,7 +48,7 @@ class Griffith extends Personagem {
     }
 
     mostrarDetalhes() {
-        console.log(`Griffith: ${this.nome}, Classe: ${this.classe}, Força: ${this.força}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Carisma: ${this.carisma}, Poder de Liderança: ${this.poderDeLiderança}`);
+        console.log(`Griffith: ${this.nome}, Classe: ${this.classe}, Força: ${this.força}, Agilidade: ${this.agilidade}, Vida: ${this.vida}, Carisma: ${this.carisma}, Poder de Liderança: ${this.poderDeLideranca}`);
     }
 }
 

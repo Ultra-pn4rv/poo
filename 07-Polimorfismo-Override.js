@@ -14,3 +14,27 @@ receberDano(dano) {
     console.log(`${this.nome} recebeu ${dano} de dano. Vida: ${this.vida}`);
     }
 }
+
+// Classe derivada Guerreiro
+class Guerreiro extends Personagem {
+    constructor(nome, vida, arma) {
+        super(nome, vida);
+        this.arma = arma;
+    }
+
+    atacar() {
+        console.log(`${this.nome} atacou com ${this.arma}`);
+    }
+}
+
+// Classe derivada Mago
+class Mago extends Personagem {
+    constructor(nome, vida, magia) {
+        super(nome, vida);
+        this.magia = magia;
+    }
+
+    atacar() {
+        console.log(`${this.nome} atacou com ${this.magia}`);
+    }
+}

@@ -38,3 +38,15 @@ class Mago extends Personagem {
         console.log(`${this.nome} atacou com ${this.magia}`);
     }
 }
+
+// Classe derivada Arqueiro
+class Arqueiro extends Personagem {
+    constructor(nome, vida, tipoFlecha) {
+        super(nome, vida);
+        this.tipoFlecha = tipoFlecha;
+    }
+
+    atacar() {
+        console.log(`${this.nome} atacou com ${this.tipoFlecha}`);
+    }
+}

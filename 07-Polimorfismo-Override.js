@@ -50,3 +50,16 @@ class Arqueiro extends Personagem {
         console.log(`${this.nome} atacou com ${this.tipoFlecha}`);
     }
 }
+
+// criando instancias de guerreiro, mago e arqueiro
+const guerreiro = new Guerreiro("Guts", 8000, "espada");
+guerreiro.atacar();
+guerreiro.receberDano(20);
+
+const mago = new Mago("Lich", 5000, "magia negra");
+mago.atacar();
+mago.receberDano(15);
+
+const arqueiro = new Arqueiro("Scorth", 6000, "explosiva");
+arqueiro.atacar();
+arqueiro.receberDano(10);

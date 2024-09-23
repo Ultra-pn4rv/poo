@@ -92,3 +92,21 @@ class Assassino extends Personagem {
     console.log(`${this.nome} usa sua furtividade de nível ${this.furtividade} para se esconder!`)
   }
 }
+
+// Classe derivada - Paladino
+class Paladino extends Personagem {
+  constructor(nome, nivel, vida, mana, fe) {
+    super(nome, "Paladino", nivel, vida, mana);
+    this.fe = fe; // Atributo específico
+  }
+
+  defesa() {
+    console.log(
+      `${this.nome} se defendeu com o escudo sagrado, absorvendo mais dano com base na fé ${this.fe}`
+    );
+  }
+
+  curar() {
+    console.log(`${this.nome} usa sua fé para curar a si mesmo ou aliados!`);
+  }
+}

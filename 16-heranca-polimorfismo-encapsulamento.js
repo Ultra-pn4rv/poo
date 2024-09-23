@@ -110,3 +110,23 @@ class Paladino extends Personagem {
     console.log(`${this.nome} usa sua fé para curar a si mesmo ou aliados!`);
   }
 }
+
+// Classe derivada - Mecanico
+    class Mecanico extends Personagem {
+        constructor(nome, nivel, vida, mana, engenharia) {
+            super(nome, "Mecânico", nivel, vida, mana);
+            this.engenharia = engenharia; // Atributo específico
+        }
+        
+        // Sobrescrevendo o método atacar
+        receberDanoe(dano) {
+            const danoReduzido = dano - this.engenharia;
+            super.receberDano(danoReduzido);
+            console.log(`${this.nome} usou sua engenharia para reduzir o dano em ${this.engenharia} .`);
+        }
+        
+        // Método específico
+        construirTorre() {
+            console.log(`${this.nome} construiu uma torre defensiva!`);
+        }
+    }

@@ -148,3 +148,22 @@ const mecanico = new Mecanico("Roberto das Engrenagens", 8, 90, 40, 5);
 // Chamando os métodos
 mecanico.receberDano(30); // Método sobrescrito
 mecanico.construirTorre(); // Método específico
+
+console.log("----------------------------------------------------------------");
+console.log("Modificando os objetos usando setters:");
+console.log("----------------------------------------------------------------");
+
+// Modificando os atributos do Assassino usando setters
+assassino.nome = "Raven";
+console.log(`Nome modificado: ${assassino.nome}`);
+assassino.atacar();
+
+// Modificando os atributos do Paladino usando setters
+paladino.vida = 150;
+console.log(`Vida modificada: ${paladino.vida}`);
+paladino.defesa();
+
+// Modificando os atributos do Mecanico usando setters
+mecanico.mana = 60;
+console.log(`Mana modificada: ${mecanico.mana}`);
+mecanico.receberDano(50);

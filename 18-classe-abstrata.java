@@ -33,3 +33,4 @@ class Guerreiro extends Personagem {
     public void defender() {
         System.out.println(nome + " defende-se com um escudo");
     }
+}

@@ -53,7 +53,7 @@ defender() {
 
 // Criando instancias e testando o comportamento
 try {
-    const personagem = new Personagem("Invalido");
+    const Personagem = new Personagem("Invalido");
 } catch (error) {
     console.log(error,message);
 }

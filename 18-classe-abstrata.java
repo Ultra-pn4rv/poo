@@ -57,3 +57,18 @@ class Mago extends Personagem {
         System.out.println(nome + " defende-se com um escudo");
     }
 }
+
+// Classe principal
+public class Main {
+    public static void main(String[] args) {
+
+        // Instanciando objetos de Guerreiro e Mago
+        Guerreiro guerreiro = new Guerreiro("Thor", "Lança de dragão");
+        guerreiro.atacar();
+        guerreiro.defender();
+
+        Mago mago = new Mago("Loki", "Fogo divino");
+        mago.atacar();
+        mago.defender();
+    }
+}

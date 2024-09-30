@@ -50,3 +50,18 @@ defender() {
     console.log(`${this.nome} usa um escudo mágico para se defender`);
     }
 }
+
+// Criando instancias e testando o comportamento
+try {
+    const personagem = new Personagem("Invalido");
+} catch (error) {
+    console.log(error,message);
+}
+
+const guerreiro = new Guerreiro("Gandalf", "Espada de Lâmina");
+guerreiro.atacar();
+guerreiro.defender();
+
+const mago = new Mago("Saruman", "Chama de Fogo");
+mago.atacar();
+mago.defender();
